@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Beercal</title>
+    <!--Googlefont-->
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <!--Css-->
+    <link rel="stylesheet" href="static/css/mains.css" type="text/css" />
+  </head>
+  <body>
+    <div class ="container">
+
+
+        <h1>Welcome on Beercalc!</h1>
+          Nos bières:
+          {{beersindex}}
+        <form method="post" action="new">
+          <p><button id="NewB" href="new" >Nouvelle bière</button></p>
+        </form>
+        <form method="post" action="calc">
+          <p><button id="CalcPB" href="calc">Calculer son budget</button></p>
+        </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Résultat </title>
+    <!--Googlefont-->
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <!--Css-->
+    <link rel="stylesheet" href="static/css/mains.css" type="text/css" />
+</head>
+<h1>Résultat</h1>
+<div class ="container">
+    <body>
+    <p>Vous avez choisis La <span> {{namebeer}}</span>! Sous la forme de <span>{{cdt}}</span>.Très bon choix!</p>
+    <p>Il y aura <span>{{nM}}</span> garçons et <span>{{nF}}</span> filles! </p>
+    <p>Chaque garçon(s) consomera<span> {{Bpg}} {{namebeer}}</span>!</p>
+    <P>Chaque fille(s) consomera <span>{{Bpf}} {{namebeer}}</span>!</P>
+    <p>Vous allez boire la quantité astronomique de <span>{{quantité}}</span> litres de <span> {{namebeer}}</span>!</p>
+    <p>Ca vous coutera la maudique somme de <span>{{Prix}}</span> € (vidange non comprise)</p>
+    <p>Il vous faut maintenant acheter les <span> {{Unité}} {{cdt}}</span>.</p>
+    <p>Ca vous coutera <span>{{Pp}}</span>€ par personne!</p>
+    <p><span>Bon amusement et n'oubliez pas que l'alcool est a consommer avec modération.</span></p>
+     <form method="post" action="index">
+          <p><button href="index" >Retour à la page d'acceuil</button></p>
+        </form>
+
+    </body>
+</div>
+
+</html>

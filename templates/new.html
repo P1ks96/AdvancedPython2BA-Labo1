@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <!--Googlefont-->
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <!--Css-->
+    <link rel="stylesheet" href="static/css/mains.css" type="text/css" />
+    <title>Nouvelle Bière</title>
+</head>
+<body>
+<h1>Nouvelle bière</h1>
+<div class ="container">
+    <form method="post" action="addbeer">
+        <!--<p><label>Id (Pseudo de la bière)<br /><input type="text" name="id" maxlength="128" required></label></p>-->
+        <p><label>Nom( Ofiiciel)<br /><input aria-required="true"  type="text" name="nom" maxlength="50" required></label></p>
+        <p><label>Alcool<br /><input aria-required="true" type="number" name="alcool" maxlength="4" min="0.0" max="100" step="0.1"required>%</label></p>
+        <p><label> Prix au litre<br /><input aria-required="true" min="0.0" max="500" type="number" name="Pl" maxlength="128" required>€/l</label></p>
+           <label> Conditionnement: <br>
+            <input type="checkbox" name="conditionnement" value="Cannette 25cl"> Cannette 25cl<br>
+            <input type="checkbox" name="conditionnement" value="Cannette 33cl"> Cannette 33cl<br>
+            <input type="checkbox" name="conditionnement" value="Cannette 50cl"> Cannette 50 cl<br>
+            <input type="checkbox" name="conditionnement" value="Bouteille 25cl"> Bouteille 25 cl<br>
+            <input type="checkbox" name="conditionnement" value="Bouteille 33cl"> Bouteille 33 cl<br>
+            <input type="checkbox" name="conditionnement" value="Bouteille 50cl"> Bouteille 50 cl<br>
+            <input type="checkbox" name="conditionnement" value="Bouteille 75cl"> Bouteille 75 cl<br>
+            <input type="checkbox" name="conditionnement" value="Fût 30l"> Fût 30l<br>
+            <input type="checkbox" name="conditionnement" value="Fût 50l"> Fût 50l<br></label>
+
+        <p><input id="NewB" type="submit" value="Ajouter"></p>
+    </form>
+     <form method="post" action="index">
+          <p><button id="ReturnB" href="index" >Retour à la page d'acceuille</button></p>
+        </form>
+</div>
+</body>
+</html>

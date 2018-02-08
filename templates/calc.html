@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Beercalc</title>
+      <script>
+          function selectBeer() {
+            var beer = document.getElementById("beer").value;
+            window.location.href = "/calc?selectedBeer=" + beer;
+          }
+      </script>
+      <!--Googlefont-->
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <!--Css-->
+    <link rel="stylesheet" href="static/css/mains.css" type="text/css" />
+  </head>
+  <body>
+    <h1>Calcule</h1>
+    <div class ="container">
+    <form method="post" action="rslt">
+      <p><label>Nom<br />
+        <select required id="beer" name="id" onchange="selectBeer()">
+            <option value="0">Choix..</option>
+            {{beers}}
+        </select></label></p>
+        <p><label>Prix au litre :<input id="price" size="4" readonly value ="{{Pl}} €" name="Pl"onchange="updated(this)" ></label></p>
+        <p><label> Degrés d'alcool :<input id="deg" size="4"  readonly value="{{alcool}}°" name="alcool"onchange="updated(this)" ></label></p>
+        <p><label>Garçon(s)<br /><input required min="0"  max="100000" size="2" type="number" name="nM" maxlength="5" ></label></p>
+        <label>Soif garçon(s) <br/>
+        <select required name="soifg" onchange="updated(this)">
+                            <option value="0">Choix..</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+        </select></label></p>
+        <p><label>Fille(s)<br /><input required size="2" type="number"  min="0"  max="100000" name="nF" maxlength="5" ></label></p>
+         </label></p>Soif fille(s) <br/>
+        <select required name="soiff" onchange="updated(this)">
+                            <option value="0">Choix..</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+        </select></label></p>
+        <p><label>Conditionnement<br />
+        </label></p><select required name="cdt" onchange="updated(this)">
+         <option value=""></option>
+        {{cdt}}
+        </select></label></p>
+      <p><button id="CalcPB" type="submit">Calculer le prix</button></p>
+    </form>
+         <form method="post" action="index">
+          <p><button id="ReturnB" href="index" >Retour à la page d'acceuille</button></p>
+        </form>
+    </div>
+  </body>
+</html>

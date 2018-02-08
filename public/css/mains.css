@@ -1,0 +1,57 @@
+*{
+margin: 0;
+padding: 5px;
+}
+
+h1 {
+    color: #ffcc00;
+    font-family: 'Bungee', cursive;
+
+    }
+    html, body{
+    height = 100%
+    }
+
+body {
+
+     background-image: url("https://www.mensjournal.com/wp-content/uploads/beer-78f9fcba-8b52-4b0b-a261-d35b46b2d1f9.jpg");
+     background-size: 100%;
+     background-repeat: no-repeat;
+     background-position: center;
+     display :flex;
+     flex-direction: column;
+     justify-content: center;
+     p.solid {border-style: solid;}
+}
+.container {
+    width: 600px;
+    margin: 0 auto;
+    text-align : center;
+    color: #ffcc00;
+    font-family: 'Abril Fatface', cursive;
+    text-size: 40px;
+    border: 25px solid #ff9900 ;
+    background-color: #cc3300 ;
+}
+
+span {
+    color: #ffff00;
+    size: 30px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+#price, #deg {
+    background-color: transparent;
+    border-color: transparent;
+    color: #fccc00;
+    font-weight: bold;
+    font-family: 'Abril Fatface', cursive;
+}
+
+#CalcPB, #NewB, #ReturnB {
+    background-color: transparent;
+    border-color: #ff9900 ;
+    color: #fccc00;
+    font-weight: bold;
+    font-family: 'Abril Fatface', cursive;
+}
