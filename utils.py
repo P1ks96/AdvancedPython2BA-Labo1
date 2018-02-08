@@ -7,9 +7,9 @@
 def fact(n):
     s = 1
     while n != 0:
-            s = (s*n)
-            n = -1
-    return s
+        s = (s*n)
+        n -= 1
+        return s
 
 def roots(a, b, c):
         d = ((b) ** -(4 * a * c))
