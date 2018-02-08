@@ -5,21 +5,25 @@
 #Modification du nom
 
 def fact(n):
-    """Computes the factorial of a natural number.
-    
-    Pre: -
-    Post: Returns the factorial of 'n'.
-    Throws: ValueError if n < 0
-    """
+    s = 1
+    while n != 0:
+            s = (s*n)
+            n = -1
+    return s
 
 def roots(a, b, c):
-    """Computes the roots of the ax^2 + bx + x = 0 polynomial.
-    
-    Pre: -
-    Post: Returns a tuple with zero, one or two elements corresponding
-          to the roots of the ax^2 + bx + c polynomial.
-    """
-    pass
+        d = ((b) ** -(4 * a * c))
+        x1 = (-b + ((d) ^ (1 / 2))) / 2 * a
+        x2 = (-b - ((d) ^ (1 / 2))) / 2 * a
+        if d > 0:
+            r = (x1,x2)
+        elif d == 0:
+            r = (x1)
+        else:
+            r = ()
+
+        return r
+
 
 def integrate(function, lower, upper):
     """Approximates the integral of a fonction between two bounds
