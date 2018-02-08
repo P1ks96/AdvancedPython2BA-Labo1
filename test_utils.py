@@ -6,16 +6,16 @@ import unittest
 import utils
 
 class TestUtils(unittest.TestCase):
-    def test_fact(self,n):
-        s=1
-        while n != 0:
-            s = s*n
-            n=-1
-        self.assertEqual( utils.fact(n),s)
+    def test_fact(self,s):
+        n=1
+        while s != 0:
+            n = n*s
+            s =-1
+        self.assertEqual( utils.fact(s),n)
         pass
     
     def test_roots(self, a, b, c):
-        d = ((b) ** -(4 * a * c))
+        d = ((b**2) - (4 * a * c))
         x1 = (-b + ((d) ^ (1 / 2))) / 2 * a
         x2 = (-b - ((d) ^ (1 / 2))) / 2 * a
         if d > 0:
