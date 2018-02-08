@@ -5,11 +5,13 @@
 #Modification du nom
 
 def fact(n):
+    if n < 0:
+        raise ValueError()
     s = 1
     while n != 0:
         s = (s*n)
         n -= 1
-        return s
+    return s
 
 def roots(a, b, c):
         d = ((b) ** -(4 * a * c))
