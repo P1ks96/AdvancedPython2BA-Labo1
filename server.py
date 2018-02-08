@@ -60,7 +60,7 @@ class BeerCalc():
         "All the math behind the page rslt"
         alcool = float(self.beers[int(id)]["alcool"])
         Pl = float(self.beers[int(id)]["Pl"])
-        namebeer =str(self.beers[int(id)]["nom"])
+        namebeer =str(self.beers[int(id)]["nom"]) #Comentaire#
         Bpg = int
         Bpf = int
         nM=int(nM)
